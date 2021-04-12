@@ -1,0 +1,20 @@
+/*// the browser will make a call to your generator to render an image back
+echo '<img src="myimagegenerator.php" />';
+
+// src will be something like "data:image/png;base64,..."
+echo '<img src="'.generateImage().'" />';*/
+
+
+QRcode::png("http://www.abc.com", "test.png", "L", 4, 4);
+
+							//"<td> <a href=\"../src/sped.php?idSped=".$idSped."\"><img width=\"100%\" height=\"100%\"class=\"img\" src=\"../img/".$idSped.".png\" > </a> </td>		"
+
+
+//  per visualizzare mail e password
+
+SELECT clienti.mail as "mail" , DES_DECRYPT(password) as "password"
+FROM account, clienti
+WHERE clienti.idCliente=account.user 
+AND clienti.mail = "pozze.simo@gmail.com"
+
+INSERT INTO account(user, password) VALUES (2, DES_ENCRYPT("strongpassword"));
