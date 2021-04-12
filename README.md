@@ -1,4 +1,4 @@
 # projects
-projects and thought
+projects and thoughts
 
 _simopozze_
